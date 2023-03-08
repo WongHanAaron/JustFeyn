@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustFeyn.Ui", "JustFeyn.Ui\JustFeyn.Ui.csproj", "{F4C842F2-9AB5-4494-BA24-EEA7704B2832}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{84FDF86F-97A2-41C5-B5B0-10DBD3546492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{730E47FD-869E-4D74-8ACF-CF74FA9D7019}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{286FDA3D-24A1-4772-A593-95EA09DD3468}"
+	ProjectSection(SolutionItems) = preProject
+		docs\User Interface Mockups.vsdx = docs\User Interface Mockups.vsdx
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustFeyn.Ui", "src\JustFeyn.Ui\JustFeyn.Ui.csproj", "{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4C842F2-9AB5-4494-BA24-EEA7704B2832}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72B65BA4-F1D1-4650-AD3F-D07B5EEC1690} = {84FDF86F-97A2-41C5-B5B0-10DBD3546492}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
