@@ -3,10 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="JustFeyn.Ui.Pages.Study.VideoStudyPage">
-    <VerticalStackLayout>
-        <toolkit:MediaElement >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <toolkit:MediaElement Grid.Row="0">
 
         </toolkit:MediaElement>
-        <Button Text="Create"/>
-    </VerticalStackLayout>
+        <Button Text="Create" Grid.Row="1"/>
+    </Grid>
 </ContentPage>

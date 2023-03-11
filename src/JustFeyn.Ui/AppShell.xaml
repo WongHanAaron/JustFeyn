@@ -11,6 +11,10 @@
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+        Route="mainpage" />
+    <ShellContent
+        Title="Video Study"
+        ContentTemplate="{DataTemplate study:VideoStudyPage}"
+        Route="videostudy"
+        />
 </Shell>
