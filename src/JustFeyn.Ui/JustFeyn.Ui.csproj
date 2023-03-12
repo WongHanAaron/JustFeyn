@@ -58,13 +58,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\Study\VideoStudyPage.xaml.cs">
-	    <DependentUpon>VideoStudyPage.xaml</DependentUpon>
+	  <Compile Update="Views\Study\VideoStudyView.xaml.cs">
+	    <DependentUpon>VideoStudyView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\Study\VideoStudyPage.xaml">
+	  <MauiXaml Update="Views\Study\VideoStudyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

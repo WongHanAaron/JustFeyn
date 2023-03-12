@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:JustFeyn.Ui"
-    xmlns:study="clr-namespace:JustFeyn.Ui.Pages.Study"
+    xmlns:study="clr-namespace:JustFeyn.Ui.Views.Study"
     Shell.FlyoutBehavior="Disabled"
     Title="JustFeyn">
 
@@ -13,7 +13,7 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="mainpage" />-->
     <ShellContent
-        ContentTemplate="{DataTemplate study:VideoStudyPage}"
+        ContentTemplate="{DataTemplate study:VideoStudyView}"
         Route="videostudy"
         />
 </Shell>

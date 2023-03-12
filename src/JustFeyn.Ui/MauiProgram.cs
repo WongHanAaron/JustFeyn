@@ -24,6 +24,8 @@ namespace JustFeyn.Ui
             builder.Logging.AddDebug();
 #endif
 
+            
+
             return builder.Build();
         }
     }

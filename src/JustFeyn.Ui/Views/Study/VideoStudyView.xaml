@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:icons="clr-namespace:JustFeyn.Ui.Resources.IconPacks"
-             x:Class="JustFeyn.Ui.Pages.Study.VideoStudyPage">
+             x:Class="JustFeyn.Ui.Views.Study.VideoStudyView">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
