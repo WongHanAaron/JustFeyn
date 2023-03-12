@@ -5,15 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:JustFeyn.Ui"
     xmlns:study="clr-namespace:JustFeyn.Ui.Pages.Study"
-    Shell.FlyoutBehavior="Flyout"
-    >
+    Shell.FlyoutBehavior="Disabled"
+    Title="JustFeyn">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="mainpage" />
+        Route="mainpage" />-->
     <ShellContent
-        Title="Video Study"
         ContentTemplate="{DataTemplate study:VideoStudyPage}"
         Route="videostudy"
         />

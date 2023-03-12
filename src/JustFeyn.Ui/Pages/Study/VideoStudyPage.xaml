@@ -2,15 +2,67 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:icons="clr-namespace:JustFeyn.Ui.Resources.IconPacks"
              x:Class="JustFeyn.Ui.Pages.Study.VideoStudyPage">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <toolkit:MediaElement Grid.Row="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <toolkit:MediaElement Grid.Row="0" Grid.Column="0">
 
         </toolkit:MediaElement>
-        <Button Text="Create" Grid.Row="1"/>
+        <Grid Grid.Column="1" Background="{StaticResource Gray600}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0">
+
+            </ListView>
+            <Grid Grid.Row="1" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" HorizontalOptions="Center">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons"
+                                         Color="{StaticResource Primary}"
+                                         Glyph="{x:Static icons:MaterialDesignIconFonts.OpenInApp}"
+                                         Size="25"/>
+                    </Button.ImageSource>
+                </Button>
+                <Button Grid.Column="1" HorizontalOptions="Center">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons"
+                                         Color="{StaticResource Primary}"
+                                         Glyph="{x:Static icons:MaterialDesignIconFonts.Play}"
+                                         Size="25" />
+                    </Button.ImageSource>
+                </Button>
+                <Button Grid.Column="2" HorizontalOptions="Center">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons"
+                                         Color="{StaticResource Primary}"
+                                         Glyph="{x:Static icons:MaterialDesignIconFonts.Plus}"
+                                         Size="25"/>
+                    </Button.ImageSource>
+                </Button>
+                <Button Grid.Column="3" HorizontalOptions="Center">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons"
+                                         Color="{StaticResource Primary}"
+                                         Glyph="{x:Static icons:MaterialDesignIconFonts.Cards}"
+                                         Size="25"/>
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+        </Grid>
     </Grid>
 </ContentPage>
