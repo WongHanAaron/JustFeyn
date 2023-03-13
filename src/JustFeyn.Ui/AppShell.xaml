@@ -7,13 +7,6 @@
     xmlns:study="clr-namespace:JustFeyn.Ui.Views.Study"
     Shell.FlyoutBehavior="Disabled"
     Title="JustFeyn">
-
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="mainpage" />-->
-    <ShellContent
-        ContentTemplate="{DataTemplate study:VideoStudyView}"
-        Route="videostudy"
-        />
+    <ShellContent ContentTemplate="{DataTemplate study:VideoStudyView}" 
+                  Route="VideoStudy"/>
 </Shell>

@@ -1,4 +1,6 @@
 ﻿using CommunityToolkit.Maui;
+using JustFeyn.Ui.ViewModels;
+using JustFeyn.Ui.Views;
 using Microsoft.Extensions.Logging;
 
 namespace JustFeyn.Ui
@@ -24,7 +26,8 @@ namespace JustFeyn.Ui
             builder.Logging.AddDebug();
 #endif
 
-            
+            builder.RegisterViews();
+            builder.RegisterViewModels();
 
             return builder.Build();
         }

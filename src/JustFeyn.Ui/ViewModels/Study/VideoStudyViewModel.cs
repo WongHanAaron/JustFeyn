@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JustFeyn.Ui.ViewModels.Study
 {
-    class VideoStudyViewModel
+    public class VideoStudyViewModel
     {
     }
 }
