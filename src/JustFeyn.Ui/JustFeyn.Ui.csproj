@@ -54,6 +54,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="1.0.2" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -67,10 +68,6 @@
 	  <MauiXaml Update="Views\Study\VideoStudyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

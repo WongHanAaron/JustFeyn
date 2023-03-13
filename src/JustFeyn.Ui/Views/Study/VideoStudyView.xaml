@@ -12,7 +12,8 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
-        <toolkit:MediaElement Grid.Row="0" Grid.Column="0">
+        <toolkit:MediaElement Grid.Row="0" Grid.Column="0"
+                              Source="{Binding }">
 
         </toolkit:MediaElement>
         <Grid Grid.Column="1" Background="{StaticResource Gray600}">
@@ -20,8 +21,16 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <ListView Grid.Row="0">
-
+            <ListView Grid.Row="0" ItemsSource="{Binding Concepts}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Label Grid.Column="1" Text="{Binding Prompt}" FontAttributes="Bold" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
             <Grid Grid.Row="1" Margin="5">
                 <Grid.ColumnDefinitions>
@@ -30,7 +39,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" HorizontalOptions="Center">
+                <Button Grid.Column="0" HorizontalOptions="Center" Command="{Binding SelectVideoCommand}">
                     <Button.ImageSource>
                         <FontImageSource FontFamily="MaterialDesignIcons"
                                          Color="{StaticResource Primary}"
